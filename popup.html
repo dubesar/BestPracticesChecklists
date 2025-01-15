@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Review Best Practices Checklist</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h3>Code Review Checklist</h3>
+        <div class="checklist">
+            <div class="checklist-item">
+                <input type="checkbox" id="code-written">
+                <label for="code-written">1. Write your code</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="small-prs">
+                <label for="small-prs">2. Create small PRs/CRs</label>
+                <div class="tooltip">Keep changes focused and manageable for faster reviews</div>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="metrics">
+                <label for="metrics">3. Add metrics</label>
+                <div class="tooltip">Include relevant metrics for monitoring and analysis</div>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="null-checks">
+                <label for="null-checks">4. Null/undefined checks</label>
+                <div class="tooltip">Implement proper error handling and edge cases</div>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="unit-tests">
+                <label for="unit-tests">5. Write unit tests</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="integration-tests">
+                <label for="integration-tests">6. Write integration tests</label>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="canaries">
+                <label for="canaries">7. Write canaries</label>
+                <div class="tooltip">Implement monitoring checks for early warning</div>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="manual-testing">
+                <label for="manual-testing">8. Manual testing docs</label>
+                <div class="tooltip">Document manual testing procedures and scenarios</div>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="feature-flags">
+                <label for="feature-flags">9. Use feature flags</label>
+                <div class="tooltip">Implement feature toggles for controlled rollout</div>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="shadow-mode">
+                <label for="shadow-mode">10. Deploy in shadow mode</label>
+                <div class="tooltip">Test in production by logging execution path without affecting users</div>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox" id="deployment">
+                <label for="deployment">11. Start actual deployment</label>
+            </div>
+        </div>
+        <div class="actions">
+            <button id="reset">Reset All</button>
+            <button id="save">Save Progress</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
